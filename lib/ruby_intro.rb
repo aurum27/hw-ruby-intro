@@ -82,5 +82,8 @@ class BookInStock
     @price = p
   end
   
-  
+  def price_as_string
+    @out = "$%0.2f" % @price
+    return @out
+  end
 end
